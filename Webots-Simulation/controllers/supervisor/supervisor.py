@@ -16,7 +16,6 @@ class Driver (Supervisor):
     def run(self):
         print("Simulation has started.")
         previous_message = ''
-        print(self.translation)
 
         # Main loop.
         while True:
