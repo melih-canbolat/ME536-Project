@@ -1,0 +1,303 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "Explain stuff here."
+  ]
+  title "ME536 Webots Simulation - İsmail Melih CANBOLAT"
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  fieldOfView 0.8
+  orientation 0.8843322973044709 -0.4218124656076952 -0.20007656484994374 5.298554293020019
+  position 0.5767821134553346 2.1176041773413448 0.9557004077337652
+}
+Background {
+  skyColor [
+    0.25098 0.25098 0.290196
+  ]
+}
+Floor {
+  size 2 2
+}
+DirectionalLight {
+  direction -3 -3 -3
+  intensity 3
+}
+Desk {
+}
+DEF Cube_1 Solid {
+  translation -0.108649 0.79 -0.172433
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.3 0.8
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.03 0.05
+      }
+    }
+  ]
+  name "Cube_1"
+}
+DEF Cube_2 Solid {
+  translation 0.267424 0.79 0.196515
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.03 0.05
+      }
+    }
+  ]
+  name "Cube_2"
+}
+DEF Sphere_1 Solid {
+  translation 0.09 0.79 0.19
+  children [
+    Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+        subdivision 3
+      }
+    }
+  ]
+  name "Sphere_1"
+}
+DEF Sphere_2 Solid {
+  translation 0.440454 0.79 0.0185618
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "Sphere_2"
+}
+DEF Capsule_1 Solid {
+  translation -0.0996355 0.79 0.0280228
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.1
+        radius 0.03
+      }
+    }
+  ]
+  name "Capsule_1"
+}
+DEF Capsule_2 Solid {
+  translation 0.451254 0.79 0.190757
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.1
+        radius 0.03
+      }
+    }
+  ]
+  name "Capsule_2"
+}
+DEF Torus_1 Solid {
+  translation 0.09 0.79 0.03
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/torus.stl"
+        ]
+      }
+    }
+  ]
+  name "Torus_1"
+}
+DEF Torus_2 Solid {
+  translation -0.0856815 0.79 0.185911
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/torus.stl"
+        ]
+      }
+    }
+  ]
+  name "Torus_2"
+}
+DEF Triangle_1 Solid {
+  translation 0.420067 0.79 -0.187874
+  rotation 1 0 0 1.5707996938995747
+  scale 0.25 0.25 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/triangle.stl"
+        ]
+      }
+    }
+  ]
+  name "Triangle_1"
+}
+DEF Triangle_2 Solid {
+  translation 0.05 0.79 -0.17
+  rotation 1 0 0 1.5707996938995747
+  scale 0.25 0.25 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.1 0.6
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/triangle.stl"
+        ]
+      }
+    }
+  ]
+  name "Triangle_2"
+}
+DEF Star_1 Solid {
+  translation 0.254319 0.79 -0.164089
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/star.stl"
+        ]
+      }
+    }
+  ]
+  name "Star_1"
+}
+DEF Star_2 Solid {
+  translation 0.264318 0.79 0.035911
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.180392 0.156863
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "shapes/star.stl"
+        ]
+      }
+    }
+  ]
+  name "Star_2"
+}
+DEF RobotCam Robot {
+  translation 0.29 1.5 0
+  children [
+    DEF MAIN_BODY Transform {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.0352941 0.160784 0.34902
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BODY Sphere {
+            radius 0.025
+            subdivision 2
+          }
+        }
+      ]
+    }
+    Receiver {
+    }
+    Camera {
+      translation 0 -0.025 0
+      rotation 1 0 0 -1.5708
+      children [
+        Transform {
+          rotation 1 0 0 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.8 0.8 0.8
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/cam.png"
+                  ]
+                }
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.001
+                radius 0.007
+              }
+            }
+          ]
+        }
+      ]
+      fieldOfView 0.5
+      width 200
+      height 200
+    }
+  ]
+  name "RobotCam"
+  controller "slave"
+}
+Robot {
+  children [
+    Emitter {
+    }
+  ]
+  name "supervisor"
+  controller "supervisor"
+  supervisor TRUE
+}
