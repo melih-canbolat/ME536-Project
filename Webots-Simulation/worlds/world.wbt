@@ -9,7 +9,7 @@ WorldInfo {
 Viewpoint {
   fieldOfView 0.8
   orientation 0.8843322973044709 -0.4218124656076952 -0.20007656484994374 5.298554293020019
-  position 0.5767821134553346 2.1176041773413448 0.9557004077337652
+  position 0.6445805179054065 2.310394632171925 1.0978642889262649
 }
 Background {
   skyColor [
@@ -257,6 +257,10 @@ DEF RobotCam Robot {
       ]
     }
     Receiver {
+    }
+    Display {
+      width 200
+      height 200
     }
     Camera {
       translation 0 -0.025 0
