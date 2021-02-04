@@ -8,8 +8,8 @@ WorldInfo {
 }
 Viewpoint {
   fieldOfView 0.8
-  orientation 0.8843322973044709 -0.4218124656076952 -0.20007656484994374 5.298554293020019
-  position 0.6445805179054065 2.310394632171925 1.0978642889262649
+  orientation 0.8707027888793085 -0.4443565483841716 -0.21076980653286073 5.28555952755019
+  position 0.5841762945704897 2.160913765498686 0.9629879231437204
 }
 Background {
   skyColor [
@@ -31,6 +31,7 @@ DEF Cube_1 Solid {
     Shape {
       appearance PBRAppearance {
         baseColor 0.2 0.3 0.8
+        transparency 1
         roughness 1
         metalness 0
       }
@@ -46,7 +47,7 @@ DEF Cube_2 Solid {
   children [
     Shape {
       appearance PBRAppearance {
-        baseColor 0 1 0
+        baseColor 0 0.6 0
         roughness 1
         metalness 0
       }
@@ -62,6 +63,8 @@ DEF Sphere_1 Solid {
   children [
     Shape {
       appearance PBRAppearance {
+        transparency 1
+        roughness 1
         metalness 0
       }
       geometry Sphere {
@@ -78,6 +81,7 @@ DEF Sphere_2 Solid {
     Shape {
       appearance PBRAppearance {
         baseColor 1 0 1
+        transparency 1
         roughness 1
         metalness 0
       }
@@ -94,6 +98,8 @@ DEF Capsule_1 Solid {
   children [
     Shape {
       appearance PBRAppearance {
+        transparency 1
+        roughness 1
         metalness 0
       }
       geometry Capsule {
@@ -105,7 +111,7 @@ DEF Capsule_1 Solid {
   name "Capsule_1"
 }
 DEF Capsule_2 Solid {
-  translation 0.451254 0.79 0.190757
+  translation -0.288746 0.79 0.190757
   rotation 0 0 1 1.5707996938995747
   children [
     Shape {
